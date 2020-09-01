@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="LightingDemo.cpp">
+      <Filter>Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalMapDemo.cpp">
+      <Filter>Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="AreaLightingDemo.cpp">
+      <Filter>Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="BillboardDemo.cpp">
+      <Filter>Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="WeatherDemo.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="LightingDemo.h">
+      <Filter>Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalMapDemo.h">
+      <Filter>Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="AreaLightingDemo.h">
+      <Filter>Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="BillboardDemo.h">
+      <Filter>Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="WeatherDemo.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Lighting">
+      <UniqueIdentifier>{e8acf1ea-56b0-4fa4-9eef-e7148aa1918d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Environment">
+      <UniqueIdentifier>{7e086fd7-cf70-4f94-986e-43078d513593}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

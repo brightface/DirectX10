@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="Execute.h" />
+    <ClInclude Include="Vertex\D3D11_Geometry.h" />
+    <ClInclude Include="Vertex\D3D11_Geometry.inl" />
+    <ClInclude Include="Vertex\D3D11_Vertex.h" />
+    <ClInclude Include="InputAssembler\D3D11_VertexBuffer.h" />
+    <ClInclude Include="InputAssembler\D3D11_IndexBuffer.h" />
+    <ClInclude Include="InputAssembler\D3D11_InputLayout.h" />
+    <ClInclude Include="Shader\D3D11_Shader.h" />
+    <ClInclude Include="Shader\D3D11_ConstantBuffer.h" />
+    <ClInclude Include="Rasterizer\D3D11_RasterizerState.h" />
+    <ClInclude Include="Rasterizer\D3D11_Viewport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="Execute.cpp" />
+    <ClCompile Include="Vertex\D3D11_Vertex.cpp" />
+    <ClCompile Include="InputAssembler\D3D11_VertexBuffer.cpp" />
+    <ClCompile Include="InputAssembler\D3D11_IndexBuffer.cpp" />
+    <ClCompile Include="InputAssembler\D3D11_InputLayout.cpp" />
+    <ClCompile Include="Shader\D3D11_Shader.cpp" />
+    <ClCompile Include="Shader\D3D11_ConstantBuffer.cpp" />
+    <ClCompile Include="Rasterizer\D3D11_RasterizerState.cpp" />
+    <ClCompile Include="Rasterizer\D3D11_Viewport.cpp" />
+  </ItemGroup>
+</Project>

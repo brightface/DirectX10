@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="VertexLine2Demo.h">
+      <Filter>Lines</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexLineColorDemo.h">
+      <Filter>Lines</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexLineDemo.h">
+      <Filter>Lines</Filter>
+    </ClInclude>
+    <ClInclude Include="TriangleListDemo.h">
+      <Filter>Triangles</Filter>
+    </ClInclude>
+    <ClInclude Include="RectDemo.h">
+      <Filter>Rect</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldDemo.h">
+      <Filter>Worlds</Filter>
+    </ClInclude>
+    <ClInclude Include="World2Demo.h">
+      <Filter>Worlds</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexDemo.h">
+      <Filter>Rect</Filter>
+    </ClInclude>
+    <ClInclude Include="GridDemo.h">
+      <Filter>Rect</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeDemo.h">
+      <Filter>Rect</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureDemo.h">
+      <Filter>Rect</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureSamplerDemo.h">
+      <Filter>Rect</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainDemo.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="VertexLine2Demo.cpp">
+      <Filter>Lines</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexLineColorDemo.cpp">
+      <Filter>Lines</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexLineDemo.cpp">
+      <Filter>Lines</Filter>
+    </ClCompile>
+    <ClCompile Include="TriangleListDemo.cpp">
+      <Filter>Triangles</Filter>
+    </ClCompile>
+    <ClCompile Include="RectDemo.cpp">
+      <Filter>Rect</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldDemo.cpp">
+      <Filter>Worlds</Filter>
+    </ClCompile>
+    <ClCompile Include="World2Demo.cpp">
+      <Filter>Worlds</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexDemo.cpp">
+      <Filter>Rect</Filter>
+    </ClCompile>
+    <ClCompile Include="GridDemo.cpp">
+      <Filter>Rect</Filter>
+    </ClCompile>
+    <ClCompile Include="CubeDemo.cpp">
+      <Filter>Rect</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureDemo.cpp">
+      <Filter>Rect</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureSamplerDemo.cpp">
+      <Filter>Rect</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainDemo.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Lines">
+      <UniqueIdentifier>{1200f7a0-9926-4938-89eb-158476c15bbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Triangles">
+      <UniqueIdentifier>{76ab12db-c41d-418f-b165-523606bb660d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rect">
+      <UniqueIdentifier>{f63dd9be-a4ac-4baa-9896-76d30bb54f08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Worlds">
+      <UniqueIdentifier>{e1980bc4-0d31-475a-8c88-957e6f919306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Environment">
+      <UniqueIdentifier>{9323567b-0864-4307-baa0-b6aa2afbb949}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

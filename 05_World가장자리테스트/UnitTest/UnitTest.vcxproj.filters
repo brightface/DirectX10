@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="VertexLineDemo.cpp" />
+    <ClCompile Include="VertexLine2Demo.cpp" />
+    <ClCompile Include="TriangleListDemo.cpp" />
+    <ClCompile Include="RectDemo.cpp" />
+    <ClCompile Include="VertexMoveDemo.cpp" />
+    <ClCompile Include="WorldDemo.cpp" />
+    <ClCompile Include="World2Demo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="VertexLineDemo.h" />
+    <ClInclude Include="VertexLine2Demo.h" />
+    <ClInclude Include="TriangleListDemo.h" />
+    <ClInclude Include="RectDemo.h" />
+    <ClInclude Include="VertexMoveDemo.h" />
+    <ClInclude Include="WorldDemo.h" />
+    <ClInclude Include="World2Demo.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="LightingDemo.cpp">
+      <Filter>Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalMapDemo.cpp">
+      <Filter>Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="AreaLightingDemo.cpp">
+      <Filter>Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryBillboardDemo.cpp">
+      <Filter>Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="RtvDemo.cpp">
+      <Filter>PostEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewportDemo.cpp">
+      <Filter>PostEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorToneDemo.cpp">
+      <Filter>PostEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="MrtDemo.cpp">
+      <Filter>PostEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="BlurDemo.cpp">
+      <Filter>PostEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="GaussianBlurDemo.cpp">
+      <Filter>PostEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="BloomDemo.cpp">
+      <Filter>PostEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectorDemo.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthDemo.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthBufferDemo.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowDemo.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowFrameworkDemo.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="FrustumDemo.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="TsTriangleDemo.cpp">
+      <Filter>Tessellation</Filter>
+    </ClCompile>
+    <ClCompile Include="TsRectDemo.cpp">
+      <Filter>Tessellation</Filter>
+    </ClCompile>
+    <ClCompile Include="TsDistanceDemo.cpp">
+      <Filter>Tessellation</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainLODDemo.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="ScatteringDemo.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="ReflectionDemo.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="WaterDemo.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="LightingDemo.h">
+      <Filter>Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalMapDemo.h">
+      <Filter>Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="AreaLightingDemo.h">
+      <Filter>Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryBillboardDemo.h">
+      <Filter>Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="RtvDemo.h">
+      <Filter>PostEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewportDemo.h">
+      <Filter>PostEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorToneDemo.h">
+      <Filter>PostEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="MrtDemo.h">
+      <Filter>PostEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="BlurDemo.h">
+      <Filter>PostEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="GaussianBlurDemo.h">
+      <Filter>PostEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="BloomDemo.h">
+      <Filter>PostEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectorDemo.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthDemo.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthBufferDemo.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowDemo.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowFrameworkDemo.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="FrustumDemo.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="TsTriangleDemo.h">
+      <Filter>Tessellation</Filter>
+    </ClInclude>
+    <ClInclude Include="TsRectDemo.h">
+      <Filter>Tessellation</Filter>
+    </ClInclude>
+    <ClInclude Include="TsDistanceDemo.h">
+      <Filter>Tessellation</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainLODDemo.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="ScatteringDemo.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectionDemo.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="WaterDemo.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Lighting">
+      <UniqueIdentifier>{e8acf1ea-56b0-4fa4-9eef-e7148aa1918d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PostEffects">
+      <UniqueIdentifier>{22a18fd6-5fcb-476a-8efb-5c018aec15fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{bb7651d5-f9ab-41de-811b-70547d0373a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tessellation">
+      <UniqueIdentifier>{22d8a93f-6492-4db4-8eda-e406ebd6da71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Environment">
+      <UniqueIdentifier>{f57bcf4f-2fdd-46c6-982d-367c38cb0656}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1022
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Framework", "Framework\Framework.vcxproj", "{DA282E68-6BD8-4358-B0B3-1C1DAAD23C5D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest", "UnitTest\UnitTest.vcxproj", "{69C0BABC-18FB-4398-9C33-63035E14F5B7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DA282E68-6BD8-4358-B0B3-1C1DAAD23C5D} = {DA282E68-6BD8-4358-B0B3-1C1DAAD23C5D}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Shaders", "_Shaders", "{74442934-F011-4087-9AFD-8D184A7D7607}"
+	ProjectSection(SolutionItems) = preProject
+		..\_Shaders\02_Line.fx = ..\_Shaders\02_Line.fx
+		..\_Shaders\02_LineColor.fx = ..\_Shaders\02_LineColor.fx
+		..\_Shaders\02_Pass.fx = ..\_Shaders\02_Pass.fx
+		..\_Shaders\04_Rect.fx = ..\_Shaders\04_Rect.fx
+		..\_Shaders\05_World.fx = ..\_Shaders\05_World.fx
+		..\_Shaders\07_Grid.fx = ..\_Shaders\07_Grid.fx
+		..\_Shaders\09_Cube.fx = ..\_Shaders\09_Cube.fx
+		..\_Shaders\10_Texture.fx = ..\_Shaders\10_Texture.fx
+		..\_Shaders\11_TextureSampler.fx = ..\_Shaders\11_TextureSampler.fx
+		..\_Shaders\12_Terrain.fx = ..\_Shaders\12_Terrain.fx
+		..\_Shaders\13_DebugLine.fx = ..\_Shaders\13_DebugLine.fx
+		..\_Shaders\13_Terrain.fx = ..\_Shaders\13_Terrain.fx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA282E68-6BD8-4358-B0B3-1C1DAAD23C5D}.Debug|x86.ActiveCfg = Debug|Win32
+		{DA282E68-6BD8-4358-B0B3-1C1DAAD23C5D}.Debug|x86.Build.0 = Debug|Win32
+		{DA282E68-6BD8-4358-B0B3-1C1DAAD23C5D}.Release|x86.ActiveCfg = Release|Win32
+		{DA282E68-6BD8-4358-B0B3-1C1DAAD23C5D}.Release|x86.Build.0 = Release|Win32
+		{69C0BABC-18FB-4398-9C33-63035E14F5B7}.Debug|x86.ActiveCfg = Debug|Win32
+		{69C0BABC-18FB-4398-9C33-63035E14F5B7}.Debug|x86.Build.0 = Debug|Win32
+		{69C0BABC-18FB-4398-9C33-63035E14F5B7}.Release|x86.ActiveCfg = Release|Win32
+		{69C0BABC-18FB-4398-9C33-63035E14F5B7}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30C5DD3F-CA25-4C4A-9A90-8625734AD012}
+	EndGlobalSection
+EndGlobal

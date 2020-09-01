@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="GridDemo.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="CubeDemo.cpp">
+      <Filter>Meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexDemo.cpp">
+      <Filter>Vertices</Filter>
+    </ClCompile>
+    <ClCompile Include="RectDemo.cpp">
+      <Filter>Vertices</Filter>
+    </ClCompile>
+    <ClCompile Include="TriangleListDemo.cpp">
+      <Filter>Vertices</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexLine2Demo.cpp">
+      <Filter>Vertices</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexLineDemo.cpp">
+      <Filter>Vertices</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexMoveDemo.cpp">
+      <Filter>Vertices</Filter>
+    </ClCompile>
+    <ClCompile Include="World2Demo.cpp">
+      <Filter>Vertices</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldDemo.cpp">
+      <Filter>Vertices</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureDemo.cpp">
+      <Filter>Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureSamplerDemo.cpp">
+      <Filter>Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainDemo.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="GetHeightDemo.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="VerticalRaycastDemo.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="GridDemo.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeDemo.h">
+      <Filter>Meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexDemo.h">
+      <Filter>Vertices</Filter>
+    </ClInclude>
+    <ClInclude Include="RectDemo.h">
+      <Filter>Vertices</Filter>
+    </ClInclude>
+    <ClInclude Include="TriangleListDemo.h">
+      <Filter>Vertices</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexLine2Demo.h">
+      <Filter>Vertices</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexLineDemo.h">
+      <Filter>Vertices</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexMoveDemo.h">
+      <Filter>Vertices</Filter>
+    </ClInclude>
+    <ClInclude Include="World2Demo.h">
+      <Filter>Vertices</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldDemo.h">
+      <Filter>Vertices</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureDemo.h">
+      <Filter>Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureSamplerDemo.h">
+      <Filter>Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainDemo.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="GetHeightDemo.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="VerticalRaycastDemo.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Terrain">
+      <UniqueIdentifier>{3a7dee65-ec8e-4bec-80ec-a5f6369fa5d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Meshes">
+      <UniqueIdentifier>{0b547a60-871e-4467-9e8b-8e071c2112b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vertices">
+      <UniqueIdentifier>{00ee98d8-67fa-4ef0-8eb8-b61217f4a2c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Texture">
+      <UniqueIdentifier>{1dc15949-06e7-4f30-8f48-ac33a77bc6ef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
