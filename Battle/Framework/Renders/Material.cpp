@@ -25,7 +25,7 @@ void Material::Initialize()
 }
 
 Material::~Material()
-{	
+{
 	SafeDelete(diffuseMap);
 	SafeDelete(specularMap);
 	SafeDelete(normalMap);

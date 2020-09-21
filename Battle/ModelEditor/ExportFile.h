@@ -17,4 +17,5 @@ private:
 	void Kachujin();
 	void Airplane();
 	void Weapons();
+	void Gun();
 };

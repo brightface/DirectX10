@@ -38,7 +38,6 @@ using namespace std;
 #include <ImGui_New/imgui.h>
 #include <ImGui_New/imgui_impl_dx11.h>
 #include <ImGui_New/imgui_impl_win32.h>
-#include <ImGui_New/Imguizmo.h>
 #pragma comment(lib, "ImGui_New/imgui.lib")
 
 //DirectXTex

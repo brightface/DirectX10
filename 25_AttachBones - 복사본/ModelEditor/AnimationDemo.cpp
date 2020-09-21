@@ -88,6 +88,7 @@ void AnimationDemo::Render()
 	}
 }
 
+//police
 void AnimationDemo::Kachujin()
 {
 	kachujin = new ModelAnimator(shader);
@@ -119,8 +120,26 @@ void AnimationDemo::Kachujin()
 	colliderObject->Init->Position(-25, 10, -5.0f);
 	colliderObject->Init->Scale(5, 5, 75);
 	colliderObject->Init->Rotation(0, 30, 1);
+
+	//UINT count = kachujin -> GetTransformCount();
+	//Weapon
+	/*{
+		weapon = new ModelRender(shader);
+		weapon->ReadMesh(L"Weapon/Sword");
+		weapon->ReadMaterial(L"Weapon/Sword");
+
+		for (UINT i = 0; i < count; i++)
+			weapon->AddTransform();
+
+
+		weaponInitTransform = new Transform();
+		weaponInitTransform->Position(-2.9f, 1.45f, -6.45f);
+		weaponInitTransform->Scale(0.5f, 0.5f, 0.75f);
+		weaponInitTransform->Rotation(0, 0, 1);
+	}*/
 }
 
+//enemy
 void AnimationDemo::Police()
 {
 	police = new ModelAnimator(shader);

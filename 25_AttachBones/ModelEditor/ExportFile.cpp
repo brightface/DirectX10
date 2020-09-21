@@ -8,7 +8,7 @@ void ExportFile::Initialize()
 	//Tower();
 	//Airplane();
 
-	//Kachujin();
+	Kachujin();
 }
 
 void ExportFile::Tank()
@@ -49,27 +49,44 @@ void ExportFile::Kachujin()
 	SafeDelete(conv);
 
 	conv = new Converter();
-	conv->ReadFile(L"Kachujin/Sword And Shield Idle.fbx");
+	conv->ReadFile(L"Kachujin/Idle.fbx");
 	conv->ExportAnimClip(0, L"Kachujin/Idle");
 	SafeDelete(conv);
 
 	conv = new Converter();
-	conv->ReadFile(L"Kachujin/Sword And Shield Walk.fbx");
+	conv->ReadFile(L"Kachujin/Walk.fbx");
 	conv->ExportAnimClip(0, L"Kachujin/Walk");
 	SafeDelete(conv);
 
 	conv = new Converter();
-	conv->ReadFile(L"Kachujin/Sword And Shield Run.fbx");
+	conv->ReadFile(L"Kachujin/Run.fbx");
 	conv->ExportAnimClip(0, L"Kachujin/Run");
 	SafeDelete(conv);
 
 	conv = new Converter();
-	conv->ReadFile(L"Kachujin/Sword And Shield Slash.fbx");
+	conv->ReadFile(L"Kachujin/Slash.fbx");
 	conv->ExportAnimClip(0, L"Kachujin/Slash");
 	SafeDelete(conv);
 
 	conv = new Converter();
-	conv->ReadFile(L"Kachujin/Bboy Hip Hop Move.fbx");
+	conv->ReadFile(L"Kachujin/HipHop.fbx");
 	conv->ExportAnimClip(0, L"Kachujin/HipHop");
 	SafeDelete(conv);
+
+	/*conv = new Converter();
+	conv->ReadFile(L"Kachujin/Bboy Hip Hop Move.fbx");
+	conv->ExportAnimClip(0, L"Kachujin/HipHop");
+	SafeDelete(conv);*/
+
+	conv = new Converter();
+	conv->ReadFile(L"Kachujin/Hit.fbx");
+	conv->ExportAnimClip(0, L"Kachujin/Hit");
+	SafeDelete(conv);
+
+	conv = new Converter();
+	conv->ReadFile(L"Kachujin/Down.fbx");
+	conv->ExportAnimClip(0, L"Kachujin/Down");
+	SafeDelete(conv);
+
+	
 }

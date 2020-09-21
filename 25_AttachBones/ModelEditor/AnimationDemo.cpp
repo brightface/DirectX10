@@ -9,6 +9,7 @@ void AnimationDemo::Initialize()
 	shader = new Shader(L"21_Animation.fx");
 
 	Kachujin();
+	Police();
 }
 
 void AnimationDemo::Update()
@@ -24,7 +25,7 @@ void AnimationDemo::Update()
 	if (bBlendMode == false)
 	{
 		ImGui::InputInt("Clip", &clip);
-		clip %= 5;
+		clip %= 7;
 
 		ImGui::SliderFloat("Speed", &speed, 0.1f, 5.0f);
 		ImGui::SliderFloat("TakeTime", &takeTime, 0.1f, 5.0f);
@@ -48,6 +49,8 @@ void AnimationDemo::Update()
 
 	if (kachujin != NULL)
 		kachujin->Update();
+	if (police != NULL)
+		police->Update();
 }
 
 void AnimationDemo::Render()
@@ -64,7 +67,7 @@ void AnimationDemo::Render()
 		Matrix bones[MAX_MODEL_TRANSFORMS];
 		//40번이었나? 그럴거야.
 		kachujin->GetAttachBones(bones);
-		colliderObject->Transform->World(bones[37]);
+		//colliderObject->Transform->World(bones[37]);
 		//안나오면 결과를 살펴봐야지 
 		//input도 정상적으로 들어갔나 확인.
 		// output 리턴이 되었다는 이야기인데. world_11=1.0f 쉐이더에 써서.
@@ -78,13 +81,14 @@ void AnimationDemo::Render()
 
 		//computeShader로 들어가야지 Shader 가 아니라
 
-		colliderObject->Collider->Render();//콜라이더를 랜더링 하면 이제 보일거야.
+		//colliderObject->Collider->Render();//콜라이더를 랜더링 하면 이제 보일거야.
 
 		kachujin->Render();
-	
+		police->Render();
 	}
 }
 
+//police
 void AnimationDemo::Kachujin()
 {
 	kachujin = new ModelAnimator(shader);
@@ -95,6 +99,9 @@ void AnimationDemo::Kachujin()
 	kachujin->ReadClip(L"Kachujin/Run");
 	kachujin->ReadClip(L"Kachujin/Slash");
 	kachujin->ReadClip(L"Kachujin/HipHop");
+	//kachujin->ReadClip(L"Kachujin/Dead");
+	kachujin->ReadClip(L"Kachujin/Down");
+	kachujin->ReadClip(L"Kachujin/Hit");
 
 	//트랜스폼으로부터 트랜스폼 카운터를 받는다.
 	//UINT count = kachujin ->GetTransformCount();
@@ -113,7 +120,45 @@ void AnimationDemo::Kachujin()
 	//뒤 매개변수는 언제든지 바꿔도 되니까. 참조로 움직이니까.
 	colliderObject->Collider = new Collider(colliderObject->Transform, colliderObject->Init);
 
-	colliderObject->Init->Position(-25, 10, -5.0f);
+	colliderObject->Init->Position(-25, 5, -5.0f);
 	colliderObject->Init->Scale(5, 5, 75);
 	colliderObject->Init->Rotation(0, 30, 1);
+
+	/*UINT count = kachujin -> GetTransformCount();
+	//Weapon
+	{
+		weapon = new ModelRender(shader);
+		weapon->ReadMesh(L"Weapon/Sword");
+		weapon->ReadMaterial(L"Weapon/Sword");
+
+		for (UINT i = 0; i < count; i++)
+			weapon->AddTransform();
+
+
+		weaponInitTransform = new Transform();
+		weaponInitTransform->Position(-2.9f, 1.45f, -6.45f);
+		weaponInitTransform->Scale(0.5f, 0.5f, 0.75f);
+		weaponInitTransform->Rotation(0, 0, 1);
+	}*/
+}
+
+//enemy
+void AnimationDemo::Police()
+{
+	police = new ModelAnimator(shader);
+	police->ReadMesh(L"Kachujin/Mesh");
+	police->ReadMaterial(L"Kachujin/Mesh");
+	police->ReadClip(L"Kachujin/Idle");
+	police->ReadClip(L"Kachujin/Walk");
+	police->ReadClip(L"Kachujin/Run");
+	police->ReadClip(L"Kachujin/Slash");
+	police->ReadClip(L"Kachujin/HipHop");
+
+	police->GetTransform()->Position(50, 0, 0);
+	police->GetTransform()->Scale(0.025f, 0.025f, 0.025f);
+	
+}
+
+void AnimationDemo::Enemy()
+{
 }

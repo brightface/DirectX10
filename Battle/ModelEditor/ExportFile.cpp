@@ -7,7 +7,7 @@ void ExportFile::Initialize()
 	//Tank();
 	//Tower();
 	//Airplane();
-
+	//Gun();
 	//Kachujin();
 	//Weapons();
 }
@@ -18,6 +18,15 @@ void ExportFile::Tank()
 	conv->ReadFile(L"Tank/Tank.fbx");
 	conv->ExportMesh(L"Tank/Tank");
 	conv->ExportMaterial(L"Tank/Tank", false);
+	SafeDelete(conv);
+}
+
+void ExportFile::Gun()
+{
+	Converter* conv = new Converter();
+	conv->ReadFile(L"Weapon/Handgun_fbx_6.1_ASCII.fbx");
+	conv->ExportMesh(L"Weapon/Handgun_fbx_6.1_ASCII");
+	conv->ExportMaterial(L"Weapon/Handgun_fbx_6.1_ASCII", false);
 	SafeDelete(conv);
 }
 

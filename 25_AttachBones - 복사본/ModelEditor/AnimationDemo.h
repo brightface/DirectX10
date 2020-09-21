@@ -1,6 +1,12 @@
 #pragma once
 #include "Systems/IExecute.h"
 
+#define PLAYERIDLE 0
+#define PLAYERATTACK 1
+#define ENEMYIDLE 0
+#define ENEMYHIT 1
+#define ENEMYDIE 2
+
 class AnimationDemo : public IExecute
 {
 public:
@@ -20,7 +26,10 @@ private:
 	Shader* shader;
 
 	//�浹ü
-	
+	//ModelRender* weapon;
+	//Transform* weaponInitTransform;
+	ColliderObject** colliderObject;
+
 	ColliderObject* colliderObject;
 	ModelAnimator* kachujin;
 	ModelAnimator* police;

@@ -48,27 +48,31 @@ void Character::Kachujin()
 		kachujin->ReadClip(L"Kachujin/Run");
 		kachujin->ReadClip(L"Kachujin/Slash");
 		kachujin->ReadClip(L"Kachujin/HipHop");
-		kachujin->ReadClip(L"Kachujin/Back");
-		kachujin->ReadClip(L"Kachujin/Hit");
+		//kachujin->ReadClip(L"Kachujin/Back");
+		//kachujin->ReadClip(L"Kachujin/Hit");
 
-		for (float x = -50; x <= 50; x += 2.5f)
+		/*for (float x = -50; x <= 50; x += 2.5f)
 		{
 			Transform* transform = kachujin->AddTransform();
 			transform->Position(x, 0, -5);
 			transform->Scale(0.01f, 0.01f, 0.01f);
 		}
-		//카추진 위치 업데이트
 		kachujin->UpdateTransforms();
+		*/
 	}
+	Transform* transform = kachujin->AddTransform();
+	transform->Position(-1, 10, -5);
+	transform->Scale(0.01f, 0.01f, 0.01f);
+	transform->RotationDegree(0, playerRot, 0);
+	kachujin->UpdateTransforms();
 
-	//카추진 카운트 업데이트
 	UINT count = kachujin->GetTransformCount();
 
 	//Weapon
 	{
 		weapon = new ModelRender(shader);
-		weapon->ReadMesh(L"Weapon/Sword");
-		weapon->ReadMaterial(L"Weapon/Sword");
+		weapon->ReadMesh(L"Weapon/Katana");
+		weapon->ReadMaterial(L"Weapon/Katana");
 
 		for (UINT i = 0; i < count; i++)
 			weapon->AddTransform();
@@ -108,20 +112,21 @@ void Character::Player()
 		player->ReadClip(L"Kachujin/Walk");
 		player->ReadClip(L"Kachujin/Run");
 		player->ReadClip(L"Kachujin/Slash");
-		player->ReadClip(L"Kachujin/HipHop");
-		player->ReadClip(L"Kachujin/Back");
-		player->ReadClip(L"Kachujin/Hit");
-		player->ReadClip(L"Kachujin/Death");
+		//player->ReadClip(L"Kachujin/HipHop");
+		//player->ReadClip(L"Kachujin/Back");
+		//player->ReadClip(L"Kachujin/Hit");
+		//player->ReadClip(L"Kachujin/Dead");
 
-		//for (float x = -50; x <= 50; x += 2.5f)
-		//{
-		//	Transform* transform = kachujin->AddTransform();
-		//	transform->Position(x, 0, -5);
-		//	transform->Scale(0.01f, 0.01f, 0.01f);
-		//}
+		/*for (float x = -50; x <= 50; x += 2.5f)
+		{
+			Transform* transform = player->AddTransform();
+			transform->Position(x, 0, -5);
+			transform->Scale(0.01f, 0.01f, 0.01f);
+		}*/
 		Transform* transform = player->AddTransform();
 		transform->Position(-1, 0, -5);
 		transform->Scale(0.01f, 0.01f, 0.01f);
+		
 		transform->RotationDegree(0, playerRot, 0);
 		player->UpdateTransforms();
 	}
@@ -132,17 +137,17 @@ void Character::Player()
 	//Weapon
 	{
 		weapon = new ModelRender(shader);
-		weapon->ReadMesh(L"Weapon/Sword");
-		weapon->ReadMaterial(L"Weapon/Sword");
+		weapon->ReadMesh(L"Weapon/Katana");
+		weapon->ReadMaterial(L"Weapon/Katana");
 
 		for (UINT i = 0; i < count; i++)
 			weapon->AddTransform();
 
-
+		//맨앞x가 위 아래이다.
 		weaponInitTransform = new Transform();
-		weaponInitTransform->Position(-2.9f, 1.45f, -6.45f);
-		weaponInitTransform->Scale(0.5f, 0.5f, 0.75f);
-		weaponInitTransform->Rotation(0, 0, 1);
+		weaponInitTransform->Position(-9, 1, -5.0f);
+		weaponInitTransform->Scale(0.4f, 0.4f, 0.5f);
+		weaponInitTransform->Rotation(204.25f, 30, 90);
 	}
 
 	//Collider
@@ -153,9 +158,11 @@ void Character::Player()
 			colliderObject[i] = new ColliderObject();
 
 			colliderObject[i]->Init = new Transform();
-			colliderObject[i]->Init->Position(-2.9f, 1.45f, -50.0f);
+			
+			colliderObject[i]->Init->Position(-25, 10, -5.0f);
 			colliderObject[i]->Init->Scale(5, 5, 75);
-
+			colliderObject[i]->Init->Rotation(0, 30, 1);
+			
 			colliderObject[i]->Transform = new Transform();
 			colliderObject[i]->Collider = new Collider(colliderObject[i]->Transform, colliderObject[i]->Init);
 		}
@@ -172,12 +179,12 @@ void Character::Enemy()
 		enemy->ReadClip(L"Kachujin/Idle");
 		enemy->ReadClip(L"Kachujin/Walk");
 		enemy->ReadClip(L"Kachujin/Run");
-		enemy->ReadClip(L"Kachujin/Slash");
-		enemy->ReadClip(L"Kachujin/HipHop");
-		enemy->ReadClip(L"Kachujin/Back");
-		enemy->ReadClip(L"Kachujin/Hit");
-		enemy->ReadClip(L"Kachujin/Death");
-		enemy->ReadClip(L"Kachujin/Down");
+		//enemy->ReadClip(L"Kachujin/Slash");
+		//enemy->ReadClip(L"Kachujin/HipHop");
+		//enemy->ReadClip(L"Kachujin/Back");
+		//enemy->ReadClip(L"Kachujin/Hit");
+		//enemy->ReadClip(L"Kachujin/Death");
+		//enemy->ReadClip(L"Kachujin/Down");
 
 		//for (float x = -50; x <= 50; x += 2.5f)
 		//{
@@ -288,7 +295,7 @@ void Character::playerUpdate()
 			Transform* weaponTransform = weapon->GetTransform(i);
 			weaponTransform->World(weaponInitTransform->World() * bones[40]);
 
-			colliderObject[i]->Collider->GetTransform()->World(bones[40]);
+			colliderObject[i]->Collider->GetTransform()->World(bones[37]);
 			colliderObject[i]->Collider->Update();
 
 			Vector3 playerPos = Vector3(player->GetTransform(i)->World()._41, player->GetTransform(i)->World()._42, player->GetTransform(i)->World()._43);

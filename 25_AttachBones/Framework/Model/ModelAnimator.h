@@ -114,7 +114,9 @@ private:
 
 private:
 	Shader* shader;
+	
 	Model* model;
+
 
 	Transform* transform = NULL;
 
